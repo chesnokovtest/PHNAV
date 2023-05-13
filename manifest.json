@@ -1,0 +1,18 @@
+{
+    "name": "PronHub Non Age Verification",
+    "description":"Данное расширение освобождает вас от необходимости подтверждать свой возраст",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author": "chesnokovtest@gmail.com",
+    "icons": {
+        "16": "icons/16.png",
+        "32": "icons/32.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["script.js"],
+        "run_at":"document_end"
+    }]
+}
